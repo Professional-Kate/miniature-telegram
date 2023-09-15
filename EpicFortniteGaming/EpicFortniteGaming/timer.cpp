@@ -3,9 +3,9 @@
 #include <iostream>
 #include <thread>
 
-void timer::tik_tok()
+void timer::tik_tok() const
 {
-    while (!is_game_ending)
+    while (!game_ending)
     {
         std::cout << "TikTok" << "\n";
         std::this_thread::sleep_for(std::chrono::seconds(1));

@@ -4,8 +4,7 @@ class timer
 {
 public:
     /// \brief Main game loop, runs forever otherwise it wouldn't be a game loop.
-    static void tik_tok();
+    void tik_tok() const;
 
-private:
-    static constexpr bool is_game_ending = false;
+    bool game_ending = false;
 };
