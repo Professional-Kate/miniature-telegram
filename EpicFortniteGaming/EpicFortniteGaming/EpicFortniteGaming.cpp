@@ -12,15 +12,17 @@ void game_boi()
 
 int main()
 {
-    timer game_timer;
+    timer* game_timer = new timer();
 
     std::thread game_boi_thread(&game_boi);
-    std::thread clock_boi_thread(&timer::tik_tok, &game_timer);
+    std::thread clock_boi_thread(&timer::tik_tok, game_timer);
 
     game_boi_thread.join();
 
-    game_timer.game_ending = true;
+    game_timer->game_ending = true;
     clock_boi_thread.join();
+
+    delete game_timer;
 
     return 0;
 }
