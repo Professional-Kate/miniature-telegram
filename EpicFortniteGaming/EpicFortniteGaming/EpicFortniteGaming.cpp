@@ -19,7 +19,7 @@ int main()
 
     game_boi_thread.join();
 
-    game_timer->game_ending = true;
+    game_timer->end_game();
     clock_boi_thread.join();
 
     delete game_timer;
