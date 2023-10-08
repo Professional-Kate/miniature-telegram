@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include <thread>
 
 class GameManager
 {
@@ -12,4 +13,5 @@ private:
     /// \brief Main game loop
     static void Update();
     static bool _shouldGameEnd;
+    static std::thread _updateThread;
 };

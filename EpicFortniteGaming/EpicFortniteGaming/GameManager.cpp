@@ -1,21 +1,21 @@
 ﻿#include "GameManager.h"
 
 #include <iostream>
-#include <thread>
 
+std::thread GameManager::_updateThread;
 bool GameManager::_shouldGameEnd = false;
 
 void GameManager::Start()
 {
     std::cout << "Starting game..." << "\n";
-    std::thread updateThread = std::thread(&Update);
-    updateThread.detach();
+    _updateThread = std::thread(&Update);
 }
 
 void GameManager::End()
 {
     std::cout << "Ending game..." << "\n";
     _shouldGameEnd = true;
+    _updateThread.join();
 }
 
 void GameManager::Update()
