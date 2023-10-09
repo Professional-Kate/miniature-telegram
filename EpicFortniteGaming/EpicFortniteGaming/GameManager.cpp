@@ -4,6 +4,7 @@
 
 std::thread GameManager::_updateThread;
 bool GameManager::_shouldGameEnd = false;
+GameObject* GameManager::gameObject;
 
 void GameManager::Start()
 {
@@ -22,7 +23,7 @@ void GameManager::Update()
 {
     while (!_shouldGameEnd)
     {
-        std::cout << "One second!" << "\n";
+        gameObject->Update();
         std::this_thread::sleep_for(std::chrono::seconds(1));
     }
 }
