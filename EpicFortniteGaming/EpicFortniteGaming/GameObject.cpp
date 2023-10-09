@@ -4,3 +4,11 @@ GameObject::GameObject()
 {
     GameObject::Awake();
 }
+
+void GameObject::Awake()
+{
+}
+
+void GameObject::Update()
+{
+}

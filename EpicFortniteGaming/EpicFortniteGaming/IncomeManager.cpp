@@ -2,12 +2,8 @@
 
 #include <iostream>
 
-void GameObject::Awake()
+void IncomeManager::Update()
 {
-}
-
-void GameObject::Update()
-{
+    GameObject::Update();
     std::cout << "Income Update" << "\n";
 }
-

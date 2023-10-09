@@ -3,6 +3,5 @@
 
 class IncomeManager final : GameObject
 {
-public:
-    
+    void Update() override;   
 };
