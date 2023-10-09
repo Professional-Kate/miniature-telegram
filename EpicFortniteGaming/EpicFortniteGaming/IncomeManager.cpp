@@ -4,7 +4,6 @@
 
 void GameObject::Awake()
 {
-    
 }
 
 void GameObject::Update()

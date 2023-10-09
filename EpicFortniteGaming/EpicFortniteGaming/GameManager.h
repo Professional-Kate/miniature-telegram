@@ -1,8 +1,6 @@
 ﻿#pragma once
 #include <thread>
 
-#include "GameObject.h"
-
 class GameManager
 {
 public:
@@ -10,8 +8,6 @@ public:
     static void Start();
     /// \brief End the Game
     static void End();
-
-    static GameObject* gameObject;
 
 private:
     /// \brief Main game loop
