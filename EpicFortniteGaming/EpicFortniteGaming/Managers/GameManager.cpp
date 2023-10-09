@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include "GameManager.h"
-#include "GameObjectCollection.h"
+#include "../Structures/GameObjectCollection.h"
 
 std::thread GameManager::_updateThread;
 bool GameManager::_shouldGameEnd = false;

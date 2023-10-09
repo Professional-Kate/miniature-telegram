@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include <list>
 
-#include "GameObject.h"
+#include "../Game Objects/Abstract/GameObject.h"
 
 struct GameObjectCollection
 {

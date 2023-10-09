@@ -1,5 +1,5 @@
 ﻿#include "GameObjectCollection.h"
 
-#include "IncomeManager.h"
+#include "../Game Objects/IncomeManager.h"
 
 std::list<GameObject*> GameObjectCollection::GameObjects = { (GameObject*) new IncomeManager() };

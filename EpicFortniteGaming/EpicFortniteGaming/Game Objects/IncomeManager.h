@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include "GameObject.h"
+#include "Abstract/GameObject.h"
 
 class IncomeManager final : GameObject
 {
