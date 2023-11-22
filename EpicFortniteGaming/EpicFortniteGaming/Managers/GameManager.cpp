@@ -17,7 +17,7 @@ void GameManager::End()
     _shouldGameEnd = true;
     _updateThread.join();
     // cleaning up any allocated objects
-    for (GameObject* gameObject : GameObjectCollection::GameObjects)
+    for (const GameObject* gameObject : GameObjectCollection::GameObjects)
     {
         delete gameObject;
     }

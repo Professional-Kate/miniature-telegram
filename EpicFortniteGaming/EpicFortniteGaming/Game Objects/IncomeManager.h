@@ -3,5 +3,6 @@
 
 class IncomeManager final : GameObject
 {
-    void Update() override;   
+    void Update() override;
+    int _money = 0;
 };

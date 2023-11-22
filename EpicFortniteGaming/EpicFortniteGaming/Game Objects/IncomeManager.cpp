@@ -4,6 +4,7 @@
 
 void IncomeManager::Update()
 {
+    _money++;
     GameObject::Update();
-    std::cout << "Income Update" << "\n";
+    std::cout << _money << "\n";
 }
